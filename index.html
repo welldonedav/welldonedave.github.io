@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for my girlfriend</title>
+  <meta name="description" content="happy 1 month,babe!">
+  <meta name="author" content="dave arzenato">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/efekteks.css">
+  <link rel="stylesheet" href="css/responsif.css">
+  <link rel="stylesheet" href="css/buciners.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+  <!--Author    : Wafa Rifki Anafin-->
+  <!--Facebook  : https://facebook.com/wafarifkianafin-->
+  <!--Instagram : https://instagram.com/wafarifki_-->
+  <!--Website   : https://wafarifki.tk-->
+  <div class="kontener2" id="kontener2">
+    <h1>happy 1 month,babe!</h1>
+    <button class="tombol" id="tombol">open this</button>
+  </div>
+
+  <div class="kontener" id="kontener">
+    <div class="dalemnya_kontener">
+      <h1 class="judul_halaman">hi!</h1>
+      <a class="tombol_menu" onclick="klikMenu()"></a>
+      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
+        <h1 class="judul_halaman">i</h1>
+        
+        <br>
+        <div class="ucapan1">
+          <p class="isiucapan1">you make me so happy and i love you so much you don't understand how much! i think i'm truly the luckiest boy ever because i have the best girlfriend that a boy could ask for!
+           <img src="gambar/gambar1.jpg" alt="Web Bucin Html, Css, Js" class="gambar"></p>
+        </div>
+      </section>
+      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
+        <h1 class="judul_halaman">love</h1>
+        <br>
+        <div class="ucapan2">
+          <p class="isiucapan2">babe whenever you feel sad about something, talk to me about it.idc what time it is or what it's about, i'm always gonna be here for you when you need me the most remember that. and no matter how many fights or arguments we get in to i still love you and nothing could change that you are my everything, and i don't know what i would do without you i'm trying so hard not to cry because i'm so happy babe i love you so much more than you love me.
+           <img src="gambar/gambar2.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+          </p>
+        </div>
+      </section>
+      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
+        <h1 class="judul_halaman">you</h1>
+        <br>
+        <div class="ucapan3">
+          <p class="isiucapan3">babe you are special to me,you are the only one i wouldn't mind losing sleep for, the only one i can never get tired of talking to ,and the only one crossing my mind constantly throughout the day, your the one who makes me smile without trying to bring down my mood without intension to and affect my emotions with every action of yours.i just can't explain with words how much you mean to me, but you're the only one which i am afraid of losing and one i want to keep through out my life.i never thought that when we first met you would mean to me so much but i'm so grateful i got the blessing to meet you and have you in my life you mean world to me.i don't know without you what i will do in my life...............i love you......
+			<img src="gambar/gambar3.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+          </p>
+        </div>
+      </section>
+      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
+        <h1 class="judul_halaman">lilyanna anne</h1>
+        <br>
+        <h1 id="waktu"></h1>
+        <script type="text/javascript">
+          document.write("<center>");
+          var hari = new Date();
+          var jam = hari.getHours();
+          if (jam >= 0 && jam < 12) {
+            document.write(
+              "<h1 class='ucapan'>hi babe!</h1><p class='isiucapan'>happy 1 month, cantik.i love you soo much and i never want you to forget that. i just hope that we can be together forever and ever. that future we have talked about, well I wanna make it happened. I want to spend the rest of my life with you. I wanna make memories together. You are just so perfect and cute. Just looking at you makes me speechless.<3<p>"
+            );
+          } else if (jam == 12) {
+            document.write(
+              "<h1 class='ucapan'>hi babe!</h1><p class='isiucapan'>ou make me so happy and i love you so much you don't understand how much! i think i'm truly the luckiest boy ever because i have the best girlfriend that a boy could ask for! <3<p>"
+            );
+          } else if (jam >= 12 && jam <= 17) {
+            document.write(
+              "<h1 class='ucapan'>hi babe!</h1><p class='isiucapan'>ou make me so happy and i love you so much you don't understand how much! i think i'm truly the luckiest boy ever because i have the best girlfriend that a boy could ask for!<3<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>hi babe!</h1><p class='isiucapan'>ou make me so happy and i love you so much you don't understand how much! i think i'm truly the luckiest boy ever because i have the best girlfriend that a boy could ask for!<3<p>"
+            );
+          }
+          document.write("</center>");
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById("waktu").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+      var waktu = new Date(),
+        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
+        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
+        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
+        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
+          'November', 'Desember'
+        ],
+        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
+          waktu.getDay()] +
+        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
+        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
+        menit + ' ' + ampm + ' </p>';
+
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/audio.mp3');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml2 .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: 1400
+      }).add({
+        targets: '.ml2',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+</body>
+
+</html>
